@@ -1,0 +1,16 @@
+{
+  "name": "commandScroll",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "11.1.0"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:spec": "cypress run --spec 'cypress/e2e/test1.cy.js'",
+    "cy:run:chrome:spec": "cypress run --browser chrome --spec 'cypress/e2e/test1.cy.js'"
+  }
+}
