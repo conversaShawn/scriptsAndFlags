@@ -1,13 +1,20 @@
-# Command Log Scroll behavior
+# Scripts with Flags
 
-This repo is to demonstrate the undesirable auto-scroll behavior in the command log
+This repo is just to show different script options when running Cypress headlessly for single spec
 
 Install
 ```
-yarn install
+yarn
 ```
 
-Run
+## Run
+
+Running without a script command
 ```
-yarn cy:open
-```# scriptsAndFlags
+yarn cypress run --browser chrome --spec 'cypress/e2e/test1.cy.js' 
+```
+
+Running with a script command
+```
+yarn {{SCRIPT_NAME_FROM_PACKAGE.JSON}}
+```
